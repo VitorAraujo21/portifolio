@@ -7,11 +7,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #3B7B94;
+    background-color: #202020;
     color: black;
     text-align: center;
 }
-
+/* header */
 header {
     background-color: #333;
     padding: 20px;
@@ -23,20 +23,51 @@ p{
 }
 
 ul{
+    list-style: none;
+    padding-left: 0;
     text-align: justify;
+}
+
+/* barra de navegacao */
+.img-logo {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 30px;
 }
 
 .nav-bar a {
     color: white;
+    text-decoration: none;
     padding: 10px 15px;
-    display: inline-block;
+    
 }
 
 .nav-bar a:hover {
-    background-color: #CE680A;
+    background-color: rgba(255, 255, 255, 0.344);
     border-radius: 5px;
+    padding: 10px 15px;
 }
+/* nav li {
+    margin: 0 1.5rem;
+} */
 
+/* corpo */
 .perfil {
     padding: 20px;
     display: flex;
@@ -58,7 +89,7 @@ section {
     padding: 20px;
     background: #F4F4F4;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .social-icons img {
@@ -70,7 +101,36 @@ section {
     width: 40px;
     height: 40px;
 }
+/* footer */
+footer {
+    background-color: #333;
+    padding: 2rem 10% 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.email {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--cor-secundaria);
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    transition: var(--transicao);
+    padding: 10px 15px;
+}
+
+.email:hover {
+    color: var(--cor-primaria);
+    background-color:  rgba(255, 255, 255, 0.344);
+    border-radius: 5px;
+}
+/* media quarie */
 @media (max-width: 600px) {
     .nav-bar a {
         display: block;
